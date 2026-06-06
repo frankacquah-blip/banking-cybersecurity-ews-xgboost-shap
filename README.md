@@ -176,6 +176,6 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## Contact
 
-**Frank Acquah**
+**Frank Nana Asiedu Acquah**
 MSc Cybersecurity, KNUST Ghana
 GitHub: [@frankacquah-blip](https://github.com/frankacquah-blip)
