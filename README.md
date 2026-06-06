@@ -24,10 +24,10 @@ This work is submitted in partial fulfilment of the requirements for the **MSc C
 
 | Item | Details |
 |------|---------|
-| **Author** | Frank Acquah |
+| **Author** | Frank Nana Asiedu Acquah |
 | **Institution** | KNUST, Ghana |
 | **Programme** | MSc Cybersecurity |
-| **Supervisor** | [Supervisor Name] |
+| **Supervisor** | Doc. Eric Osei |
 | **Target Journal 1** | Computers & Education: AI (Elsevier) |
 | **Target Journal 2** | Journal of Educational Data Mining (JEDM) |
 | **Status** | In Progress |
