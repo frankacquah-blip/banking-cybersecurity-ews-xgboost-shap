@@ -74,7 +74,7 @@ banking-cybersecurity-ews-xgboost-shap/
 | XGBoost, SDT-weighted asymmetric loss (fabricated) | Primary/engineered model |
 | XGBoost, default logistic loss, identical tuned hyperparameters | Baseline (single, tuning-matched) |
 
-A single, tuning-matched XGBoost baseline is used by design, so that the objective function is the only difference between baseline and engineered model (see `02_modelling_fixed.py`); Logistic Regression / Random Forest / Decision Tree baselines described in an earlier proposal draft were not part of the executed study.
+A single, tuning-matched XGBoost baseline is used by design, so that the objective function is the only difference between baseline and engineered model (see `02_modelling.py`); Logistic Regression / Random Forest / Decision Tree baselines described in an earlier proposal draft were not part of the executed study.
 
 ### Evaluation Metrics
 
