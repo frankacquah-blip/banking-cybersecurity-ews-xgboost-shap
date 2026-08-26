@@ -1,4 +1,4 @@
-# SDT-Weighted XGBoost for Explainable Early-Warning Prediction of At-Risk Staff in Banking Cybersecurity Onboarding
+# SDT-Weighted XGBoost for Explainable Early-Warning Prediction of At-Risk Staff in Banking Cybersecurity Onboarding: A Single-Institution Study in Ghana.
 
 ![Python](https://img.shields.io/badge/Python-3.8.10-blue) ![XGBoost](https://img.shields.io/badge/XGBoost-1.7.6-orange) ![SHAP](https://img.shields.io/badge/SHAP-0.44.1-green) ![License](https://img.shields.io/badge/License-MIT-lightgrey) ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
@@ -14,8 +14,6 @@ The system combines:
 - **SHAP (SHapley Additive exPlanations)** — for global and local model interpretability.
 
 This work is submitted in partial fulfilment of the requirements for the **MSc Cybersecurity** degree at the **Kwame Nkrumah University of Science and Technology (KNUST), Ghana**, 2025–2026.
-
-> **Note on repository history:** this README replaces an earlier version written before real data collection, which described a dummy-data smoke-test package (`01_preprocessing.ipynb`–`05_evaluation.ipynb`, synthetic 350-row dataset) and a three-baseline, hybrid-data design that was never the executed study. That smoke-test package remains in this repository under `modelling-pipeline/` for provenance, but the scripts described below (`01_preprocessing_fixed.py`–`06_multiseed_sensitivity.py`) are the ones that produced every result reported in the thesis and manuscript.
 
 ---
 
@@ -33,7 +31,7 @@ This work is submitted in partial fulfilment of the requirements for the **MSc C
 
 ## Research Objectives
 
-1. To fabricate an SDT-weighted asymmetric-loss XGBoost classifier for predicting at-risk staff during banking cybersecurity onboarding, using institutional field survey data.
+1. To fabricate an SDT-weighted asymmetric-loss XGBoost classifier for predicting at-risk staff during banking cybersecurity onboarding: A Single-Institution Study in Ghana, using institutional field survey data.
 2. To generate globally and locally interpretable SHAP explanations of the model's risk predictions for training coordinators.
 
 ---
@@ -44,20 +42,14 @@ This work is submitted in partial fulfilment of the requirements for the **MSc C
 banking-cybersecurity-ews-xgboost-shap/
 │
 ├── modelling-pipeline/
-│   ├── 01_preprocessing_fixed.py       # Censoring filter, leakage-safe impute/encode, SDT composites
-│   ├── 02_modelling_fixed.py           # Optuna tuning + baseline/engineered model training
-│   ├── 03_smote_fixed.py               # SMOTE (training partition only) + retrain
-│   ├── 04_shap_fixed.py                # SHAP global/local explanations + pruning loop
-│   ├── 05_evaluation_fixed.py          # OOF threshold selection, CV, McNemar's, bootstrap CI, timing
-│   ├── 06_multiseed_sensitivity.py     # 5-seed retraining stability check
-│   │
-│   └── (legacy) notebooks/, generate_dummy_data.py, data/dummy_gmt_survey_data.csv
-│       — pre-ethics-clearance synthetic-data smoke test, kept for provenance only,
-│         not used to produce any reported result
+│   ├── 01_preprocessing_fixed.py     
+│   ├── 02_modelling_fixed.py           
+│   ├── 03_smote_fixed.py              
+│   ├── 04_shap_fixed.py                
+│   ├── 05_evaluation_fixed.py         
+│   ├── 06_multiseed_sensitivity.py 
+│   
 │
-├── data/                     # Not tracked: real participant data is restricted (see Ethics below)
-├── models/                   # Not tracked: model files from the author's local pinned run
-├── outputs/                  # Not tracked: CSVs/figures from the author's local pinned run
 ├── requirements.txt
 ├── LICENSE
 └── README.md
@@ -109,11 +101,11 @@ pip install -r requirements.txt
 All experiments use `random_state=42` (model/CV/split) with `06_multiseed_sensitivity.py` additionally varying the seed across {42, 0, 1, 7, 123} to check retraining stability. To reproduce results, run in order from the project root:
 
 ```
-python modelling-pipeline/01_preprocessing_fixed.py
-python modelling-pipeline/02_modelling_fixed.py
-python modelling-pipeline/03_smote_fixed.py
-python modelling-pipeline/04_shap_fixed.py
-python modelling-pipeline/05_evaluation_fixed.py
+python modelling-pipeline/01_preprocessing.py
+python modelling-pipeline/02_modelling.py
+python modelling-pipeline/03_smote.py
+python modelling-pipeline/04_shap.py
+python modelling-pipeline/05_evaluation.py
 python modelling-pipeline/06_multiseed_sensitivity.py
 ```
 
@@ -132,7 +124,7 @@ This study was submitted for approval to the KNUST Humanities and Social Science
 If you use this work, please cite:
 
 ```
-Acquah, F. N. A. (2026). SDT-Weighted XGBoost for Explainable Early-Warning Prediction of
+Asiedu Acquah, F. N. (2026). SDT-Weighted XGBoost for Explainable Early-Warning Prediction of
 At-Risk Staff in Banking Cybersecurity Onboarding: A Single-Institution Study in Ghana.
 MSc Thesis, KNUST, Ghana.
 ```
