@@ -42,14 +42,13 @@ This work is submitted in partial fulfilment of the requirements for the **MSc C
 banking-cybersecurity-ews-xgboost-shap/
 │
 ├── modelling-pipeline/
-│   ├── 01_preprocessing_fixed.py     
-│   ├── 02_modelling_fixed.py           
-│   ├── 03_smote_fixed.py              
-│   ├── 04_shap_fixed.py                
-│   ├── 05_evaluation_fixed.py         
+│   ├── 01_preprocessing.py     
+│   ├── 02_modelling.py           
+│   ├── 03_smote.py              
+│   ├── 04_shap.py                
+│   ├── 05_evaluation.py         
 │   ├── 06_multiseed_sensitivity.py 
 │   
-│
 ├── requirements.txt
 ├── LICENSE
 └── README.md
@@ -108,9 +107,6 @@ python modelling-pipeline/04_shap.py
 python modelling-pipeline/05_evaluation.py
 python modelling-pipeline/06_multiseed_sensitivity.py
 ```
-
-Each script reads from and writes to `data/`, `models/` and `outputs/` relative to the project root. The real participant dataset (`data/survey_export.csv`) is not included in this repository (see Ethics); a schema-compatible synthetic dataset for smoke-testing is available under the legacy `modelling-pipeline/` notebooks.
-
 ---
 
 ## Ethical Statement
