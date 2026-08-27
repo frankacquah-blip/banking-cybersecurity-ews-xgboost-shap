@@ -1,6 +1,6 @@
 # SDT-Weighted XGBoost for Explainable Early-Warning Prediction of At-Risk Staff in Banking Cybersecurity Onboarding: A Single-Institution Study in Ghana.
 
-![Python](https://img.shields.io/badge/Python-3.8.10-blue) ![XGBoost](https://img.shields.io/badge/XGBoost-1.7.6-orange) ![SHAP](https://img.shields.io/badge/SHAP-0.44.1-green) ![License](https://img.shields.io/badge/License-MIT-lightgrey) ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Python](https://img.shields.io/badge/Python-3.8.10-blue) ![XGBoost](https://img.shields.io/badge/XGBoost-1.7.6-orange) ![SHAP](https://img.shields.io/badge/SHAP-0.44.1-green) ![License](https://img.shields.io/badge/License-MIT-lightgrey) ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22117933.svg)](https://doi.org/10.5281/zenodo.22117933)
 
 ---
 
